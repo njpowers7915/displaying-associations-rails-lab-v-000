@@ -49,4 +49,7 @@ class ArtistsController < ApplicationController
   def artist_params
     params.require(:artist).permit(:name)
   end
+
+  def song_count
+    @song_count = Artist.songs.all.count
 end
