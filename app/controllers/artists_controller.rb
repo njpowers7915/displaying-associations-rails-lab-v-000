@@ -53,3 +53,4 @@ class ArtistsController < ApplicationController
   def song_count
     @song_count = Artist.songs.all.count
 end
+end
