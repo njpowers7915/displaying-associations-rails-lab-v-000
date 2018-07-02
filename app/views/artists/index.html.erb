@@ -2,7 +2,7 @@
 <h2>Artist List</h2>
 
 <ul>
-  <% @artist.each do |artist| %>
+  <% @artists.each do |artist| %>
     <li><%= link_to artist.name, artist_path(artist.id) %></li>
   <%end%>
 </ul>
